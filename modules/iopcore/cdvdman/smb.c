@@ -20,8 +20,6 @@
 
 #include "smsutils.h"
 
-#define USE_CUSTOM_RECV 0
-
 //Round up the erasure amount, so that memset can erase memory word-by-word.
 #define ZERO_PKT_ALIGNED(hdr, hdrSize) memset((hdr), 0, ((hdrSize) + 3) & ~3)
 
